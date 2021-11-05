@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Game Mania - Loja de games e tecnologia"/>
+    <meta name="keywords" content="Games,Fones Notebooks"/>
+    <meta name="author" content="Marlon Trindade"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Game Mania</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css"/>
+<link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css"/>
+</head>
+
+<body>
+   <header>
+      <!-- Topo -->
+      <div class="container_grid position">
+        <a href="index.html"
+          ><img class="logo"
+            src="img/Logo.png"
+            alt="Logo do site Game Mania"
+            width="290"
+            height="100"
+        /></a>
+        <form id="searchbar">
+          <input
+            type="text"
+            id="searchbar_text"
+            placeholder="Busca"
+          />
+          <img class="search"
+            src="img/pesquisar.png"
+            alt="Buscar"
+            width="40"
+            height="40"
+          />
+        </form>
+        <div>
+          <a href="#"
+            ><img class="cart"
+              src="img/carrinho.png"
+              alt="Carrinho"
+              width="50"
+              height="50"
+          /></a>
+          <p class="icon_text_header" href="#">Carrinho</p>
+        </div>
+        <div>
+          <a href="#"
+            ><img class="login"
+              src="img/login.png"
+              alt="Login"
+              width="50"
+              height="50"
+          /></a>
+          <p class="icon_text_header">Login</p>
+        </div>
+        <!--Menu com Jquery 
+          <div><a href="#" id="barras"
+            ><img
+              class="menu_bar"
+              src="img/Menu de barras.png"
+              alt="Menu de Barras"
+          /></a>
+        </div> -->
+        <div>
+          <a href="#" onclick="mostrarMenu()"
+            ><img
+              class="menu_bar"
+              src="img/Menu de barras.png"
+              alt="Menu de Barras"
+          /></a>
+        </div>
+      </div>
+
+      <!-- Barra de Menus -->
+      <div class="menu_background">
+        <nav id="menu" class="menu container_grid position_menu">
+          <a href="index.html">Home</a>
+          <a href="#">Departamentos</a>
+          <a href="pcgamer.html">PC Gamer</a>
+          <a href="galeria.html">Galeria</a>
+          <a href="sobre.html">Sobre</a>
+          <a href="contato.html">Contato</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Banner -->
+    <div id="banner">
+      <h1 id="banner_text" class="container_grid">
+        O prazer de Jogar Videogame.
+      </h1>
+    </div>
+
+    <!-- Seção de Ícones -->
+    <section class="icons_background">
+      <div class="container_grid position">
+        <div class="icons">
+          <img class="atendimento"
+            src="img/sending.png"
+            alt="Entrega 24 hrs"
+            width="120"
+            height="100"
+          />
+          <p class="icon_text_section">
+            Entrega em 24 hrs
+          </p>
+        </div>
+        <img src="img/Barra 1.png" alt="Linha divisória 1" height="80"/>
+        <div class="icons">
+          <img class="qualidade"
+            src="img/tool.png"
+            alt="Assistencia Técnica"
+            width="100"
+            height="104"
+          />
+          <p class="icon_text_section">
+           Assistência Técnica
+          </p>
+        </div>
+        <img src="img/Barra 2.png" alt="Linha divisória 2" height="80"/>
+        <div class="icons">
+          <img class="entrega"
+            src="img/send.png"
+            alt="Frete Grátis"
+            width="120"
+            height="100"
+          />
+          <p class="icon_text_section">
+            Frete Grátis para todo o Brasil!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Promoções -->
+    <section class="products_background">
+      <div class="container">
+        <h2>Promoções Imperdíveis</h2>
+        <div class="row">
+        <div class="major-carousel js-carousel owl-carousel">
+          <div class="media media-custom d-block">
+            <a href="#">
+              <img
+                src="img/fifa22.png"
+                alt="Fifa 22"
+                class="img-fluid"
+              />
+            </a>
+            <div class="media-body">
+              <p class="ofertas_text">
+                Fifa 22 <strong>R$ 290,00</strong>
+              </p>
+              <a href="#" class="botao">Comprar</a>
+            </div>
+          </div>
+          <div class="media media-custom d-block">
+            <a href="#">
+              <img
+                src="img/Controles.png"
+                alt="Controle DualSense"
+                class="img-fluid"
+              />
+            </a>
+            <div class="media-body">
+              <p class="ofertas_text">
+                DualSense <strong>R$ 430,00</strong>
+              </p>
+              <a href="#" class="botao">Comprar</a>
+            </div>
+          </div>
+          <div class="media media-custom d-block">
+            <a href="#">
+              <img
+                src="img/fonejbl.png"
+                alt="Fone de Ouvido"
+                class="img-fluid"
+              />
+            </a>
+            <div class="media-body">
+              <p class="ofertas_text">
+                Fone de Ouvido <strong>R$ 449,90</strong>
+              </p>
+              <a href="#" class="botao">Comprar</a>
+            </div>
+          </div>
+          <div class="media media-custom d-block">
+            <a href="#">
+              <img
+                src="img/ps5.jpg"
+                alt="Playstation 5"
+                class="img-fluid"
+              />
+            </a>
+            <div class="media-body">
+              <p class="ofertas_text">
+                Playstation 5 <strong>R$ 4.399,90</strong>
+              </p>
+              <a href="#" class="botao">Comprar</a>
+            </div>
+          </div>
+          <div class="media media-custom d-block">
+            <a href="#">
+              <img
+                src="img/xbox.jpg"
+                alt="Xbox"
+                class="img-fluid"
+              />
+            </a>
+            <div class="media-body">
+              <p class="ofertas_text">
+                Xbox One X <strong>R$ 3.599,00</strong>
+              </p>
+              <a href="#" class="botao">Comprar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mais vendidos-->
+    <section class="products_background">
+      <div class="container">
+        <h2>Catálogo</h2>
+        <div class="row">
+        <div class="major-carousel js-carousel-2 owl-carousel">
+            <div class="media media-custom-2 d-block text-left">
+              <a href="#">
+                <img
+                  src="img/notebook.jpg"
+                  alt="Notebook da Apple"
+                  class="img-fluid"
+                />
+              </a>
+              <div class="media-body-2">
+                <a href="#" class="recomend_text">Notebooks Apple</a>
+              </div>
+            </div>
+            <div class="media media-custom-2 d-block text-left">
+              <a href="#">
+                <img
+                  src="img/switch.jpg"
+                  alt="Nintendo"
+                  class="img-fluid"
+                />
+              </a>
+              <div class="media-body-2">
+                <a href="#" class="recomend_text">Mundo Nintendo</a>
+              </div>
+            </div>
+            <div class="media media-custom-2 d-block text-left">
+              <a href="#">
+                <img
+                  src="img/ps4.jpg"
+                  alt="Mundo da Sony"
+                  class="img-fluid"
+                />
+              </a>
+              <div class="media-body-2">
+                <a href="#" class="recomend_text">Mundo Sony</a>
+              </div>
+            </div>
+            <div class="media media-custom-2 d-block text-left">
+              <a href="#">
+                <img
+                  src="img/xbox.jpg"
+                  alt="Imagem de Xbox"
+                  class="img-fluid"
+                />
+              </a>
+              <div class="media-body-2">
+                <a href="#" class="recomend_text">Mundo Xbox</a>
+              </div>
+            </div>
+        </div> 
+      </div> 
+    </section>
+
+      <!-- Seção Newsletter -->
+    <section class="newsletter_background">
+      <div class="container">
+        <div class="row">
+          <h3 class="col news_text">Assinar o Feed</h3>
+          <form action="" class="col newsletter_box">
+            <input type="email" id="email_newsletter" placeholder="Seu e-mail aqui" required>
+            <button onclick="cadastrarEmail()" id="botao_newsletter"><img class="newsletter" src="img/newsletter.png"></button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer>
+
+        <!-- Links do Rodapé -->
+              <div class="footer_blue_background">
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <nav class="footer_menu">
+                        <h3>Institucional</h3>
+                        <a href="sobre.html">Quem Somos</a>
+                        <a href="#">Pagamentos</a>
+                        <a href="depoimento.html">Depoimento de Clientes</a>
+                        <a href="#">Departamentos</a>
+                        <a href="contato.html">Contato</a>
+                      </nav>
+                    </div>
+                    <div class="col">
+                      <div class="footer_atendimento">
+                        <h3>Atendimento</h3>
+                        <a href="#"><img src="img/localizacao.png" alt="Ícone Local" width="48" height="48" class="local"></a>
+                        <p class="atendimento_text">Avenida Lorem Ipsum, n. 01, Centro, Salvador-BA
+                          Fone (71) 0000-0000</p>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <nav class="footer_atendimento">
+                        <a href="#"><img src="img/Instalogo.png" alt="Ícone Instagram" width="64" height="64" class="Instagram"></a>
+                        <a href="#"><img src="img/Twitterlogo.png" alt="Ícone Twitter" width="64" height="64" class="Twitter"></a>
+                        <a href="#"><img src="img/Fblogo.png" alt="Ícone Facebook" width="64" height="64" class="Facebook"></a>
+                      </nav>
+                    </div>
+                  </div>
+                </div>
+                </div>
+        <!-- Rodapé -->
+              <div class="footer_black_background">
+                <div class="container">
+                  <p class="footer_text">Game Mania Informática. CNPJ: 00.000.000/0001 | Salvador - BA</p>
+                </div>
+              </div>
+            </footer>
+   </header>
+   <script src="js/jquery-3.6.0.js"></script>
+<script src="js/script.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+  </body>
+</html>
